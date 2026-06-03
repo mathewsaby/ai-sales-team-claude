@@ -44,6 +44,8 @@ Confidence: High (stated fact) | Medium (reasonable inference) | Low (indirect s
 | 50+ employees | 5-10 |
 | Layoffs / cost-cutting news | 0-5 |
 
+**Budget interpretation:** 20-25: Strong/confirmed budget signals | 15-19: Good indicators, capacity likely | 10-14: Moderate, unconfirmed | 5-9: Weak, uncertain | 0-4: Poor, financial distress possible
+
 ### Authority (0-25)
 | Signal | Points |
 |--------|--------|
@@ -53,6 +55,8 @@ Confidence: High (stated fact) | Medium (reasonable inference) | Low (indirect s
 | Founder-led / flat org (easy access) | 15-20 |
 | No leadership publicly visible | 0-5 |
 
+**Authority interpretation:** 20-25: Clear decision maker identified, direct path | 15-19: Key stakeholders found, process understood | 10-14: Some figures found, partially mapped | 5-9: Limited visibility, need discovery call | 0-4: Cannot identify from public data
+
 ### Need (0-25)
 | Signal | Points |
 |--------|--------|
@@ -61,6 +65,8 @@ Confidence: High (stated fact) | Medium (reasonable inference) | Low (indirect s
 | Competitor product mentioned in job posts | 10-15 |
 | Blog content about challenges you solve | 10-15 |
 | Industry pain point applicable to their segment | 5-10 |
+
+**Need interpretation:** 20-25: Clear validated pain, actively seeking solutions | 15-19: Strong indicators, problem is real | 10-14: Moderate signals, likely experiencing problem | 5-9: Weak, not a current priority | 0-4: No visible need
 
 ### Timeline (0-25)
 | Signal | Points |
@@ -72,6 +78,8 @@ Confidence: High (stated fact) | Medium (reasonable inference) | Low (indirect s
 | Budget cycle / renewal window | 8-12 |
 | No urgency signals | 0-5 |
 
+**Timeline interpretation:** 20-25: Decision within weeks | 15-19: Likely to act within 1-3 months | 10-14: 3-6 months | 5-9: 6-12 months or undefined | 0-4: No urgency, long-term nurture
+
 **BANT Score = Budget + Authority + Need + Timeline (0-100)**
 
 ---
@@ -81,13 +89,44 @@ Confidence: High (stated fact) | Medium (reasonable inference) | Low (indirect s
 For each element, find evidence and assign confidence (High / Medium / Low / Inferred).
 
 - **Metrics** — What KPIs does this company care about? What would success look like?
-- **Economic Buyer** — Who gives final budget approval? (SMB = founder/CEO, Mid-market = VP/Director, Enterprise = committee)
-- **Decision Criteria** — What factors guide their vendor evaluation? (tech stack patterns, compliance needs, RBI/PCI requirements for fintech prospects)
-- **Decision Process** — How do they buy? (company size = complexity; check for procurement portals, compliance requirements)
-- **Identify Pain** — Specific problems you can solve with evidence and severity (Critical / High / Medium / Low)
-- **Champion** — Who would advocate internally? (mid-level managers in relevant dept, people who used your solution before)
+  - Check homepage for metric claims, case studies for highlighted KPIs, executive LinkedIn posts, job postings for OKR mentions
+  - Output: 3-5 primary metrics they care about, how your solution impacts each, confidence level
+
+- **Economic Buyer** — Who gives final budget approval?
+  - SMB/startup: founder or CEO is almost always the economic buyer
+  - Mid-market: VP or Director of relevant department
+  - Enterprise: committee (VP + Procurement + Legal)
+  - Check team page, LinkedIn for C-suite/VP titles, org structure signals
+  - Output: name, title, evidence, confidence, alternative buyers if uncertain
+
+- **Decision Criteria** — What factors guide their vendor evaluation?
+  - Check job postings for tool requirements, tech stack for buying patterns (best-of-breed vs suite)
+  - For fintech prospects: note RBI/PCI compliance requirements, data localisation needs
+  - Output: criteria ranked by importance, how your solution performs against each
+
+- **Decision Process** — How do they buy?
+  - Smaller company = faster, simpler. Larger = committees, procurement portals
+  - Check for vendor registration pages, compliance mentions (SOC2, ISO, RBI audit requirements)
+  - Output: estimated process type, timeline, key stakeholders, potential blockers
+
+- **Identify Pain** — Specific problems you can solve
+  - Job postings for pain language, Glassdoor/Reddit for internal frustrations, blog for problem-focused content
+  - Output: each pain point with evidence, severity (Critical/High/Medium/Low), your solution's relevance
+
+- **Champion** — Who would advocate internally?
+  - Mid-level managers in the relevant department, people who used your solution at previous companies
+  - People who post about problems your product solves on LinkedIn or Reddit
+  - Output: potential champions with name, title, reasoning, approach strategy
 
 **MEDDIC Completeness = (Elements with Medium+ Confidence / 6) x 100**
+
+| Completeness | Interpretation |
+|---|---|
+| 80-100% | Excellent — well-positioned for engagement |
+| 60-79% | Good — some gaps to fill in discovery |
+| 40-59% | Moderate — need discovery call before advancing |
+| 20-39% | Limited — more intelligence needed |
+| 0-19% | Insufficient — consider different research approach |
 
 ---
 
@@ -172,14 +211,14 @@ Terminal: Print company name, BANT breakdown, MEDDIC completeness, Opportunity Q
 ---
 
 ## Error Handling
-- URL unreachable → try alternate formats, report error
-- Job postings not public → note gap, use alternate signals
-- Minimal public presence (common in India for SMEs) → reduce confidence across all dimensions, note data limitations, still produce report
-- BANT < 25 with Low/Inferred confidence throughout → recommend manual research before outreach
-- No MCA/Tracxn data available → flag as data gap, do not infer financials
+- URL unreachable -> try alternate formats, report error
+- Job postings not public -> note gap, use alternate signals
+- Minimal public presence (common in India for SMEs) -> reduce confidence across all dimensions, note data limitations, still produce report
+- BANT < 25 with Low/Inferred confidence throughout -> recommend manual research before outreach
+- No MCA/Tracxn data available -> flag as data gap, do not infer financials
 
 ## Cross-Skill Integration
-- If `COMPANY-RESEARCH.md` exists → use it, skip redundant company research
-- If `DECISION-MAKERS.md` exists → use for Authority and Champion analysis
-- If `COMPETITIVE-INTEL.md` exists → use for Decision Criteria and current solution analysis
+- If `COMPANY-RESEARCH.md` exists -> use it, skip redundant company research
+- If `DECISION-MAKERS.md` exists -> use for Authority and Champion analysis
+- If `COMPETITIVE-INTEL.md` exists -> use for Decision Criteria and current solution analysis
 - Suggest: `/sales contacts` for decision maker deep dive, `/sales outreach` for engagement sequence
