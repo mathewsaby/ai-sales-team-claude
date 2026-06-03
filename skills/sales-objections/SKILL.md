@@ -4,7 +4,7 @@ You generate comprehensive objection response scripts that salespeople can use i
 
 ## Invocation
 
-```
+```text
 /sales objections <topic/industry>
 ```
 
@@ -21,11 +21,9 @@ Before generating the playbook, collect or infer:
 5. **Average deal size**: Affects how pricing objections are handled
 6. **Your strongest proof points**: Best case studies, metrics, and testimonials available
 
-If previous analysis files exist in the working directory (PROSPECT-ANALYSIS.md, COMPANY-RESEARCH.md, COMPETITIVE-INTEL.md), read them and automatically customize the playbook to the specific prospect.
+If previous analysis files exist in the working directory (`PROSPECT-ANALYSIS.md`, `COMPANY-RESEARCH.md`, `COMPETITIVE-INTEL.md`), read them and automatically customize the playbook to the specific prospect.
 
 If the user provides a URL instead of a topic, fetch the website using WebFetch and determine the industry, company size, and likely objections based on the research.
-
----
 
 ## Step 2: Objection Handling Frameworks
 
@@ -34,13 +32,15 @@ Every response in this playbook uses one of two frameworks. Generate both respon
 ### Framework 1: Feel-Felt-Found (FFR)
 
 Structure:
-```
+
+```text
 "I understand how you feel about [restate their concern in your own words].
 [Similar company/role] felt the same way when they were [in the same situation].
 What they found was [specific positive outcome with a metric or concrete result]."
 ```
 
 Rules for FFF responses:
+
 - "Feel" must genuinely acknowledge their concern — never dismiss it
 - "Felt" must reference a real or realistic similar company/person — be specific (industry, size, role)
 - "Found" must include a specific, measurable outcome — never vague ("they loved it")
@@ -49,25 +49,23 @@ Rules for FFF responses:
 ### Framework 2: Acknowledge-Bridge-Close (ABC)
 
 Structure:
-```
+
+```text
 **Acknowledge**: "[Validate their concern — show you heard them and it's a reasonable concern]"
 **Bridge**: "[Transition to your value — reframe the concern as a reason to move forward]"
 **Close**: "[Provide evidence and propose a specific next step]"
 ```
 
 Rules for ABC responses:
+
 - Acknowledge must NOT start with "but" or "however" — genuinely validate first
 - Bridge must reframe, not dismiss — turn their concern into an advantage or learning moment
 - Close must include a proof point AND a specific next action (question, offer, or proposal)
 - Total response should be 3-5 sentences spoken aloud (approximately 15-25 seconds)
 
----
-
 ## Step 3: The 15 Universal Sales Objections
 
-Generate complete handling scripts for each of the following objections. For EACH objection, provide all six components listed below.
-
----
+Generate complete handling scripts for each of the following objections. For **each** objection, provide all six components listed below.
 
 ### Objection 1: "It's too expensive" / "We don't have the budget"
 
@@ -85,8 +83,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If they genuinely cannot afford it after exploring all pricing options (tiered pricing, reduced scope, payment terms), and there is no path to budget in the next 1-2 quarters, move them to a nurture sequence.
 
----
-
 ### Objection 2: "We're happy with our current solution"
 
 **What it really means**: Status quo bias. Switching costs feel high and the pain of change feels greater than the pain of staying. They may also not be aware of what they are missing.
@@ -102,8 +98,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: [Generate a competitive displacement case study specific to the identified current solution.]
 
 **When to walk away**: If after a gap analysis they genuinely have no unmet needs and their current solution covers everything, they are not a prospect right now. Add to nurture for when their needs evolve or their contract renews.
-
----
 
 ### Objection 3: "We need to think about it"
 
@@ -121,8 +115,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If they are genuinely not the decision-maker and need internal alignment, help them sell internally (provide a one-pager, offer to join a call with their stakeholder). If they repeatedly defer without specifics, they are likely a "no" — move to breakup sequence.
 
----
-
 ### Objection 4: "Send me more information"
 
 **What it really means**: This is the polite brush-off. 90% of the time it means "I want to end this conversation." Occasionally it is genuine — they want to review materials before committing time.
@@ -138,8 +130,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: Offer to send a case study specifically relevant to their industry/size instead of generic materials.
 
 **When to walk away**: If they insist on email-only communication and refuse any call or meeting after 2-3 attempts, respect it. Send the best materials you have and add to the follow-up sequence.
-
----
 
 ### Objection 5: "We're not ready right now" / "The timing isn't right"
 
@@ -157,8 +147,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If the timing is genuinely tied to a known event (contract renewal in Q3, budget cycle in January, post-merger integration), set a specific follow-up date tied to that event and move to nurture. If "timing" is vague and they cannot give a timeframe, it is likely a soft no.
 
----
-
 ### Objection 6: "I need to talk to my [boss/team/partner]"
 
 **What it really means**: Either they genuinely need buy-in from others (common and legitimate), or they are using "my boss" as a shield to avoid making a decision. Need to determine which and then help them sell internally.
@@ -174,8 +162,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: Offer a one-page executive summary, a pre-built ROI calculator, or a competitive comparison they can share internally.
 
 **When to walk away**: If they have been "talking to their boss" for more than 3 weeks with no progress and cannot arrange a meeting that includes the decision-maker, the deal is likely stalled. Offer to engage the decision-maker directly, and if that is declined, move to a gentle breakup.
-
----
 
 ### Objection 7: "We tried something similar before and it didn't work"
 
@@ -193,8 +179,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If the previous failure was traumatic enough that no amount of evidence will overcome it, and the decision-maker is the same person who championed the failed solution, the risk aversion may be too deeply personal. Nurture over time, but do not push.
 
----
-
 ### Objection 8: "Your competitor offers X that you don't"
 
 **What it really means**: They are comparing feature-for-feature and found a gap. May be a genuine dealbreaker or may be a negotiation tactic to get a discount. Need to determine how critical the missing feature actually is.
@@ -210,8 +194,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: Customer testimonial from someone who chose you OVER the competitor despite the missing feature, explaining why.
 
 **When to walk away**: If the missing feature is genuinely a hard requirement for their workflow (e.g., a compliance requirement, an integration they cannot work without), be honest. Say "You're right — if [Feature X] is a hard requirement, we're not the right fit today." This builds massive credibility and may bring them back when your roadmap catches up.
-
----
 
 ### Objection 9: "We can build this in-house"
 
@@ -229,8 +211,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If they have a genuine competitive advantage in building this themselves (e.g., their product IS a platform and this is core IP), building in-house may truly be the right call. Acknowledge it and move on.
 
----
-
 ### Objection 10: "I don't see the ROI"
 
 **What it really means**: You have not connected your solution to their specific business outcomes. They understand what your product does but not why it matters for THEIR bottom line.
@@ -246,8 +226,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: A detailed ROI case study with specific before/after metrics from a comparable customer, including methodology so they can verify the math.
 
 **When to walk away**: If after building a custom ROI model the numbers genuinely do not work for their situation (too small, wrong use case, insufficient volume), be honest. Not every prospect will see positive ROI, and saying so builds trust for future opportunities.
-
----
 
 ### Objection 11: "We're locked into a contract"
 
@@ -265,8 +243,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: This is a timing issue, not a rejection. Get the contract renewal date, set a firm follow-up date 2-3 months before renewal, and add to the nurture sequence. Do not push for an early break unless they express genuine dissatisfaction with the current vendor.
 
----
-
 ### Objection 12: "This isn't a priority right now"
 
 **What it really means**: They have competing priorities that feel more urgent. Your solution may be important but is not urgent enough to displace what is currently on their plate.
@@ -282,8 +258,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: Example of a customer who discovered that solving your problem accelerated their other priorities.
 
 **When to walk away**: If their priorities are genuinely misaligned and there is no connection to your value area, respect it. Get a specific quarter for re-engagement and add to nurture.
-
----
 
 ### Objection 13: "We don't have bandwidth to implement"
 
@@ -301,8 +275,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If they genuinely have zero bandwidth for even minimal implementation effort and there is no upcoming period of lighter workload, revisit in 3-6 months.
 
----
-
 ### Objection 14: "How do I know this will work for us?"
 
 **What it really means**: Risk aversion. They want proof that your solution works for companies like THEIRS, not just in general. This is a trust and credibility gap.
@@ -318,8 +290,6 @@ Generate complete handling scripts for each of the following objections. For EAC
 **Proof point to deploy**: The most relevant case study from a customer who matches their industry, size, and challenge. Offer a live reference call.
 
 **When to walk away**: If you genuinely do not have proof points or reference customers in their specific industry/size/use case, be honest. Say "We're early in [their vertical] — I'd love to work with you as a design partner, but I understand if you need more proven results."
-
----
 
 ### Objection 15: "Just not interested"
 
@@ -337,15 +307,14 @@ Generate complete handling scripts for each of the following objections. For EAC
 
 **When to walk away**: If after one genuine attempt to uncover the real objection they maintain "not interested," walk away immediately and gracefully. Do not push. A respectful exit preserves the relationship for future opportunities.
 
----
-
 ## Step 4: Industry-Specific Objections
 
-Based on the `<topic/industry>` provided, generate 5 additional objections unique to that industry. Use the same format as the universal objections above (real meaning, FFR response, ABC response, follow-up question, proof point, when to walk away).
+Based on the provided [industry/topic], generate 5 additional objections unique to that industry. Use the same format as the universal objections above (real meaning, FFR response, ABC response, follow-up question, proof point, when to walk away).
 
 ### Industry Objection Generation Rules
 
 For each industry, identify objections that arise from:
+
 - Industry-specific regulations or compliance requirements
 - Common technology constraints in that vertical
 - Industry-specific buying processes or budget cycles
@@ -354,35 +323,28 @@ For each industry, identify objections that arise from:
 
 If the user provides a URL, use WebFetch to research the specific company and generate objections tailored to that company's situation, not just the industry.
 
----
-
 ## Step 5: Competitive Objections
 
-Generate specific responses for "Why should I choose you over [Competitor X]?" for the top 3 competitors in the space.
+Generate specific responses for `"Why should I choose you over [Competitor X]?"` for the top 3 competitors in the space.
 
 For each competitor:
 
-```
+```text
 ### "Why you over [Competitor Name]?"
-
 **One-sentence positioning**: "[Your differentiator vs. this specific competitor]"
-
 **Response script**: "[2-3 sentence response that acknowledges competitor strengths, differentiates without bashing, and redirects to your unique value]"
-
 **3 landmine questions**: [Questions to ask that expose this competitor's weaknesses without directly mentioning them]
-
 **If they say "[Competitor] is cheaper"**: "[Response]"
 **If they say "[Competitor] has more features"**: "[Response]"
 **If they say "[Competitor] is the market leader"**: "[Response]"
 ```
 
 Rules for competitive responses:
+
 - NEVER bash the competitor directly. Acknowledge their strengths honestly.
 - Focus on YOUR strengths, not their weaknesses.
 - Use landmine questions to let the prospect discover competitor weaknesses on their own.
 - If you genuinely lose on a specific dimension, admit it and redirect to where you win.
-
----
 
 ## Step 6: Pricing Objections Deep Dive
 
@@ -413,8 +375,6 @@ Script template:
 Script template:
 "Let's talk about making the investment work for your budget cycle. We can do [options: annual vs. monthly, deferred start, phased implementation, pilot period, milestone-based payments]. [Specific customer] started with a [90-day pilot / quarterly payments / phased rollout] and that made it easy to get budget approval. Which of those options would make this easier to say yes to?"
 
----
-
 ## Step 7: Objection Prevention
 
 Generate 5 techniques to prevent objections from arising in the first place:
@@ -426,19 +386,17 @@ Generate 5 techniques to prevent objections from arising in the first place:
 5. **Champion building**: Identify and equip an internal champion who can pre-handle objections within their organization before you encounter them.
 
 For each prevention technique, provide:
+
 - When to deploy it in the sales process
 - Specific language/script to use
 - Example of how it prevents a specific objection
 
----
-
 ## Output Format
 
-Write the complete objection handling playbook to **OBJECTION-PLAYBOOK.md** in the current working directory with the following structure:
+Write the complete objection handling playbook to `OBJECTION-PLAYBOOK.md` in the current working directory with the following structure:
 
 ```markdown
 # Objection Handling Playbook: [Industry/Topic]
-
 Generated: [Date]
 Industry: [Industry]
 Customized For: [Prospect company if applicable]
@@ -448,7 +406,7 @@ Customized For: [Prospect company if applicable]
 ## Quick Reference: Objection Response Matrix
 
 | # | Objection | Real Meaning | Best Framework | Key Response |
-|---|-----------|-------------|----------------|--------------|
+|---|-----------|--------------|----------------|--------------|
 | 1 | Too expensive | Value not proven | ABC | Show ROI math |
 | 2 | Happy with current | Status quo bias | FFR | Gap analysis offer |
 [...continue for all 15...]
@@ -466,43 +424,35 @@ Customized For: [Prospect company if applicable]
 ---
 
 ## Universal Objections (1-15)
-
 [Full scripts for each objection]
 
 ---
 
 ## Industry-Specific Objections (16-20)
-
 [5 additional objections specific to the industry]
 
 ---
 
 ## Competitive Objections
-
 [Battle card responses for top 3 competitors]
 
 ---
 
 ## Pricing Deep Dive
-
 [5 pricing tactics with scripts]
 
 ---
 
 ## Objection Prevention Tactics
-
 [5 prevention techniques with scripts and examples]
 
 ---
 
 ## Practice Guide
-
 - Role-play scenarios for the 5 hardest objections
 - Recording prompts for self-coaching
 - Common mistakes to avoid
 ```
-
----
 
 ## Rules and Constraints
 
